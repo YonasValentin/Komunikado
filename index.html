@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="da">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>+400 reviews | forside</title>
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+    />
+
+    <style>
+      @import url(https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;600;800;900&display=swap);
+      * {
+        margin: 0;
+        padding: 0;
+        outline: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: "Roboto", sans-serif;
+        width: 100vw;
+        height: 100vh;
+      }
+      :root {
+        /* font */
+        --title-weight: 700;
+        --title-size: 36px;
+        --title-line-height: 42.19px;
+        --title-font-style: normal;
+        /* color */
+        --primary-color: #f57f31;
+        /* cards review */
+        --reviews__card-width: 416px;
+        --reviews__card-height: 264px;
+        --reviews__card-background-color: #ffffff;
+        --reviews__card-box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.15);
+        --reviews__card-border-radius: 24px;
+        /* card active state */
+        --reviews__card-active-state-border: 4px solid #f5b431;
+        /* card review img */
+        --reviews__card-img-width: 72px;
+        --reviews__card-img-height: 72px;
+        --reviews__card-img-border-radius: 50%;
+      }
+      .reviews__title {
+        position: absolute;
+        top: 80px;
+        left: 176px;
+        font-weight: var(--title-weight);
+        font-style: var(--title-font-style);
+        font-size: var(--title-size);
+        line-height: var(--title-line-height);
+        width: 416px;
+        height: 88px;
+        max-width: 50%;
+        display: flex;
+        flex-wrap: wrap;
+      }
+      .reviews__box {
+        display: flex;
+        position: absolute;
+        width: 80%;
+        height: 308px;
+        left: 64px;
+        top: 216px;
+        border-radius: 24px;
+        background-color: var(--primary-color);
+      }
+      .reviews__card-container {
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 32px;
+        align-items: center;
+        top: 336px;
+        max-width: 100vw;
+      }
+      .reviews__card {
+        width: var(--reviews__card-width);
+        height: var(--reviews__card-height);
+        background-color: var(--reviews__card-background-color);
+        box-shadow: var(--reviews__card-box-shadow);
+        border-radius: var(--reviews__card-border-radius);
+        padding-left: 36px;
+        padding-right: 48px;
+      }
+      .reviews__card-img img {
+        position: relative;
+        top: -20px;
+        border-radius: var(--reviews__card-img-border-radius);
+        width: var(--reviews__card-img-width);
+        height: var(--reviews__card-img-height);
+        object-fit: cover;
+      }
+      .reviews__card-name-job {
+        position: relative;
+      }
+      .reviews__card-name-job dt {
+        color: var(--primary-color);
+        font-weight: 700;
+        font-style: normal;
+        font-size: 18px;
+        line-height: 21px;
+      }
+      .reviews__card-job {
+        color: #333333;
+        font-weight: 600;
+        font-style: normal;
+        font-size: 14px;
+        line-height: 14px;
+      }
+      .reviews__card-review {
+        position: relative;
+        top: 8px;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 18px;
+        line-height: 28px;
+      }
+      .fas {
+        position: relative;
+        float: right;
+        color: var(--primary-color);
+        height: 28px;
+        width: 28px;
+        bottom: 18px;
+      }
+      .prev__arrow {
+        width: 28px;
+        height: 28px;
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="reviews">
+      <h1 class="reviews__title">What 400+ reviews say about us</h1>
+      <div class="reviews__box"></div>
+      <div class="reviews__card-container">
+        <div class="reviews__card">
+          <div class="reviews__card-img">
+            <img
+              src="https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260"
+              alt="billede af en smilende kvinde"
+            />
+          </div>
+          <dl class="reviews__card-name-job">
+            <dt>Navn navnsen</dt>
+            <dd>
+              <i class="fas fa-star"></i><i class="fas fa-star"></i
+              ><i class="fas fa-star"></i><i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </dd>
+            <dd class="reviews__card-job">Virksomhedsejer</dd>
+            <dd class="reviews__card-review">
+              Det nye website blev lanceret i februar 2018 og allerede inden for
+              de første 6 måneder var konverteringerne steget mere end 150%.
+            </dd>
+          </dl>
+        </div>
+        <div class="reviews__card">
+          <div class="reviews__card-img">
+            <img
+              src="https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260"
+              alt="billede af en smilende kvinde"
+            />
+          </div>
+          <dl class="reviews__card-name-job">
+            <dt>Navn navnsen</dt>
+            <dd>
+              <i class="fas fa-star"></i><i class="fas fa-star"></i
+              ><i class="fas fa-star"></i><i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </dd>
+            <dd class="reviews__card-job">Virksomhedsejer</dd>
+            <dd class="reviews__card-review">
+              Det nye website blev lanceret i februar 2018 og allerede inden for
+              de første 6 måneder var konverteringerne steget mere end 150%.
+            </dd>
+          </dl>
+        </div>
+        <div class="reviews__card">
+          <div class="reviews__card-img">
+            <img
+              src="https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260"
+              alt="billede af en smilende kvinde"
+            />
+          </div>
+          <dl class="reviews__card-name-job">
+            <dt>Navn navnsen</dt>
+            <dd>
+              <i class="fas fa-star"></i><i class="fas fa-star"></i
+              ><i class="fas fa-star"></i><i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </dd>
+            <dd class="reviews__card-job">Virksomhedsejer</dd>
+            <dd class="reviews__card-review">
+              Det nye website blev lanceret i februar 2018 og allerede inden for
+              de første 6 måneder var konverteringerne steget mere end 150%.
+            </dd>
+          </dl>
+        </div>
+        <div class="reviews__card">
+          <div class="reviews__card-img">
+            <img
+              src="https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260"
+              alt="billede af en smilende kvinde"
+            />
+          </div>
+          <dl class="reviews__card-name-job">
+            <dt>Navn navnsen</dt>
+            <dd>
+              <i class="fas fa-star"></i><i class="fas fa-star"></i
+              ><i class="fas fa-star"></i><i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </dd>
+            <dd class="reviews__card-job">Virksomhedsejer</dd>
+            <dd class="reviews__card-review">
+              Det nye website blev lanceret i februar 2018 og allerede inden for
+              de første 6 måneder var konverteringerne steget mere end 150%.
+            </dd>
+          </dl>
+        </div>
+      </div>
+      <button type="button" class="slick-next fas fa-angle-right"></button>
+      <button type="button" class="slick-prev fas fa-angle-left"></button>
+    </section>
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+    ></script>
+    <script type="text/javascript">
+      //   $(".reviews__card-container").slick({
+      //     slidesToShow: 3,
+      //     slidesToScroll: 3,
+      //     infinite: true,
+      //     prevArrow: "",
+      //     nextArrow: "",
+      //   });
+    </script>
+  </body>
+</html>
