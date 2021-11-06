@@ -129,18 +129,20 @@
         font-size: 18px;
         line-height: 28px;
       }
-      .fas {
+      .fas fa-star {
         position: relative;
         float: right;
-        color: var(--primary-color);
+        color: black;
         height: 28px;
         width: 28px;
         bottom: 18px;
       }
-      .prev__arrow {
-        width: 28px;
-        height: 28px;
-        color: red;
+      .reviews__card-star-container {
+        float: right;
+        color: var(--primary-color);
+      }
+      .left_arrow {
+        color: black;
       }
     </style>
   </head>
@@ -158,7 +160,7 @@
           </div>
           <dl class="reviews__card-name-job">
             <dt>Navn navnsen</dt>
-            <dd>
+            <dd class="reviews__card-star-container">
               <i class="fas fa-star"></i><i class="fas fa-star"></i
               ><i class="fas fa-star"></i><i class="fas fa-star"></i>
               <i class="fas fa-star"></i>
@@ -179,7 +181,7 @@
           </div>
           <dl class="reviews__card-name-job">
             <dt>Navn navnsen</dt>
-            <dd>
+            <dd class="reviews__card-star-container">
               <i class="fas fa-star"></i><i class="fas fa-star"></i
               ><i class="fas fa-star"></i><i class="fas fa-star"></i>
               <i class="fas fa-star"></i>
@@ -200,10 +202,11 @@
           </div>
           <dl class="reviews__card-name-job">
             <dt>Navn navnsen</dt>
-            <dd>
+            <dd class="reviews__card-star-container">
               <i class="fas fa-star"></i><i class="fas fa-star"></i
-              ><i class="fas fa-star"></i><i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
+              ><i class="fas fa-star"></i><i class="fas fa-star"></i
+              ><i class="fas fa-star"></i>
+              <i class="reviews__card-star-container"></i>
             </dd>
             <dd class="reviews__card-job">Virksomhedsejer</dd>
             <dd class="reviews__card-review">
@@ -221,8 +224,8 @@
           </div>
           <dl class="reviews__card-name-job">
             <dt>Navn navnsen</dt>
-            <dd>
-              <i class="fas fa-star"></i><i class="fas fa-star"></i
+            <dd class="reviews__card-star-container">
+              <i class="fas fa-star"></i><i class="fas fa-star star"></i
               ><i class="fas fa-star"></i><i class="fas fa-star"></i>
               <i class="fas fa-star"></i>
             </dd>
@@ -234,8 +237,6 @@
           </dl>
         </div>
       </div>
-      <button type="button" class="slick-next fas fa-angle-right"></button>
-      <button type="button" class="slick-prev fas fa-angle-left"></button>
     </section>
 
     <script
@@ -248,13 +249,13 @@
       src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
     ></script>
     <script type="text/javascript">
-      //   $(".reviews__card-container").slick({
-      //     slidesToShow: 3,
-      //     slidesToScroll: 3,
-      //     infinite: true,
-      //     prevArrow: "",
-      //     nextArrow: "",
-      //   });
+      $(".reviews__card-container").slick({
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        infinite: true,
+        prevArrow: '<i class="fas fa-angle-left left_arrow">',
+        nextArrow: '<i class="fas fa-angle-right right_arrow">',
+      });
     </script>
   </body>
 </html>
