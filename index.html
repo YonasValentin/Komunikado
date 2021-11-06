@@ -143,27 +143,33 @@
         color: var(--primary-color);
       }
       .left_arrow {
-        color: black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        margin-top: 5rem;
         position: absolute;
-        top: 20rem;
-        float: left;
-        left: 50rem;
-        font-size: 30px;
-        padding: 2rem;
+        left: 48vw;
+        z-index: 10;
+        font-size: 20px;
       }
       .right_arrow {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        margin-top: 5rem;
         position: absolute;
-        color: black;
-        float: right;
-        top: 20rem;
-        font-size: 30px;
-        padding: 2rem;
+        right: 48vw;
+        z-index: 10;
+        font-size: 20px;
       }
       .slick-track {
         display: flex;
         flex-wrap: wrap;
         margin-top: 1.5rem;
         gap: 32px;
+        height: auto;
       }
     </style>
   </head>
@@ -274,8 +280,8 @@
         slidesToShow: 3,
         slidesToScroll: 3,
         infinite: true,
-        prevArrow: '<i class="fas fa-angle-left left_arrow">',
         nextArrow: '<i class="fas fa-angle-right right_arrow">',
+        prevArrow: '<i class="fas fa-angle-left left_arrow">',
       });
     </script>
   </body>
