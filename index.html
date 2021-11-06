@@ -86,7 +86,6 @@
       }
       .reviews__card {
         width: var(--reviews__card-width);
-        height: auto;
         background-color: var(--reviews__card-background-color);
         box-shadow: var(--reviews__card-box-shadow);
         border-radius: var(--reviews__card-border-radius);
@@ -147,29 +146,31 @@
         align-items: center;
         justify-content: center;
         cursor: pointer;
-        margin-top: 5rem;
+        margin-top: 12rem;
         position: absolute;
         left: 48vw;
         z-index: 10;
-        font-size: 20px;
+        font-size: 32px;
       }
       .right_arrow {
         display: flex;
         align-items: center;
         justify-content: center;
         cursor: pointer;
-        margin-top: 5rem;
+        margin-top: 12rem;
         position: absolute;
         right: 48vw;
         z-index: 10;
-        font-size: 20px;
+        font-size: 32px;
       }
       .slick-track {
         display: flex;
         flex-wrap: wrap;
-        margin-top: 1.5rem;
+        margin-top: 20px;
+        margin-bottom: 40px;
+        width: 416px;
+        height: 264px;
         gap: 32px;
-        height: auto;
       }
     </style>
   </head>
@@ -278,7 +279,7 @@
     <script type="text/javascript">
       $(".reviews__card-container").slick({
         slidesToShow: 3,
-        slidesToScroll: 3,
+        slidesToScroll: 1,
         infinite: true,
         nextArrow: '<i class="fas fa-angle-right right_arrow">',
         prevArrow: '<i class="fas fa-angle-left left_arrow">',
