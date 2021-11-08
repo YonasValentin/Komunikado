@@ -64,6 +64,8 @@
         display: flex;
         flex-wrap: wrap;
       }
+
+      /* orange box */
       .reviews__box {
         display: flex;
         position: absolute;
@@ -94,7 +96,7 @@
         border: 4px solid white;
       }
       .reviews__card:hover {
-        border: 4px solid var(--primary-color);
+        border: var(--reviews__card-active-state-border);
       }
       .reviews__card-img img {
         position: relative;
@@ -143,6 +145,7 @@
         bottom: 19px;
         position: relative;
       }
+      /* jQuery default class for slider */
       .slick-track {
         display: flex;
         position: relative;
